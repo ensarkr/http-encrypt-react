@@ -1,4 +1,4 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 import useECDH from "../context/ECDH/useECDH";
 import useAuth from "../context/auth/useAuth";
 import { useEffect, useState } from "react";
