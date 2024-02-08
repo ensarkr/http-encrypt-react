@@ -1,0 +1,63 @@
+.main {
+  width: var(--content-width);
+  display: flex;
+  justify-content: center;
+  container-type: inline-size;
+  overflow-x: hidden;
+}
+
+.backgrounds {
+  position: relative;
+  display: flex;
+  width: var(--movie-card-width);
+  box-sizing: border-box;
+}
+
+.movieDetailsWrapper {
+  position: relative;
+  width: var(--movie-card-width);
+  transform-origin: center top;
+  flex-shrink: 0;
+  height: min-content;
+  transition-timing-function: ease;
+  transition-property: transform;
+  transition-duration: var(--movie-card-transition-duration);
+  will-change: transform;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  background-color: black;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+  height: 100%;
+  width: calc(((100cqw - var(--movie-card-width)) / 2));
+  z-index: 1;
+  backdrop-filter: blur(1px);
+}
+.leftButton {
+  left: 0;
+  bottom: 0;
+}
+.rightButton {
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1350px) {
+}
+@media screen and (max-width: 1060px) {
+  .leftButton,
+  .rightButton {
+    width: calc(((100cqw - var(--movie-card-width)) / 2));
+  }
+}
+@media screen and (max-width: 650px) {
+  .leftButton,
+  .rightButton {
+    width: calc(((100cqw - var(--movie-card-width)) / 2));
+  }
+}

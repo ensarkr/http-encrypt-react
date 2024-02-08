@@ -1,0 +1,38 @@
+.navbar {
+  height: var(--navbar-height);
+  padding-left: var(--content-wrapper-left-padding);
+}
+
+.content {
+  width: var(--content-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username {
+  max-width: 5rem;
+  text-wrap: nowrap;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1060px) {
+  .content {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    padding: 0 1rem;
+  }
+}

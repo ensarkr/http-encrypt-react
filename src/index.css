@@ -1,0 +1,70 @@
+:root {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --navbar-height: 3rem;
+  --min-content-height: calc(100dvh - var(--navbar-height));
+
+  --content-width: 1280px;
+  --content-wrapper-left-padding: calc((100vw - (var(--content-width))) / 2);
+
+  --movie-card-width: 80cqw;
+  --movie-card-transition-duration: 200ms;
+}
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  min-width: 320px;
+}
+
+main {
+  width: 100%;
+  padding: 1.5rem var(--content-wrapper-left-padding);
+  box-sizing: border-box;
+  min-height: var(--min-content-height);
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  line-height: normal;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1350px) {
+  :root {
+    --content-width: 1024px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  :root {
+    --content-width: calc(100%);
+    --content-wrapper-left-padding: 0px;
+    --movie-card-width: 85cqw;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    --movie-card-width: 90cqw;
+  }
+}

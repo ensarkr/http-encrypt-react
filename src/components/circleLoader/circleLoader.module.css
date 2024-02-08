@@ -1,0 +1,31 @@
+.loader {
+  height: calc(100% - 6px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #0000;
+  position: relative;
+  animation: l24 1s infinite linear;
+  border-right-color: var(--yellow-color);
+  box-sizing: border-box;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+
+.loader :after {
+  animation-duration: 4s;
+}
+
+@keyframes l24 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

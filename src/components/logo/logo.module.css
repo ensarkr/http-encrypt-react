@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main svg {
+  vertical-align: bottom;
+}
